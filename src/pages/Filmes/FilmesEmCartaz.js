@@ -28,20 +28,25 @@ export default function FilmesEmCartaz() {
 
 
     return (
-        <div className='grid-container'>
-            {filmes.map((filme) => {
-                return (
-                    <article>
-                        <strong>{filme.title}</strong>
-                        <img src={`https://image.tmdb.org/t/p/w300/${filme.poster_path} `} alt="" />
-                        <Link to='/Detalhes' className='details'>Detalhes</Link>
+        <div>
+            <h1>Os Filmes em Cartaz:</h1>
+
+            <div className='grid-container'>
+                {filmes.map((filme) => {
+                    return (
+                        <article>
+                            <strong>{filme.title}</strong>
+                            <img src={`https://image.tmdb.org/t/p/w300/${filme.poster_path} `} alt="" />
+                            <Link to='/Detalhes' className='details'>Detalhes</Link>
 
 
-                    </article>
 
-                )
+                        </article>
 
-            })}
+                    )
+
+                })}
+            </div>
         </div>
 
     )

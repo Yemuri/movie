@@ -1,12 +1,12 @@
 .grid-container {
     /* border: solid red 1px; */
     display: grid;
-    row-gap: 10px;
+    row-gap: 30px;
     grid-template-columns: 500px 500px 500px;
     max-width: 800px;
     margin: 10px;
     box-sizing: border-box;
-    column-gap: 30px;
+    column-gap: 25%;
 
 
 
@@ -40,3 +40,23 @@
 a img:hover {
     border: rgb(238, 222, 222) solid 5px;
 }
+
+/* APARECE QUANDO PASSA O MOUSE EM CIMA */
+
+.oculto{
+    display: none;
+}
+
+.aparecendo:hover + .oculto{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: ; */
+    color: black;
+    /* border: solid red 2px; */
+    height: 350px;
+}
+
+.aparecendo:hover{
+ display: none;
+}
+
