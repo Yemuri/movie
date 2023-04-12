@@ -25,7 +25,7 @@ export default function Rotas() {
                 <Route path='/SeriesEmCartaz' element={<SeriesEmCartaz />} />
                 <Route path='/SeriesPopulares' element={<SeriesPopulares />} />
                 <Route path='/Contato' element={<Contato />} />
-                <Route path='/Detalhes' element={<Detalhes />} />
+                <Route path='/Detalhes/:id' element={<Detalhes />} />
             </Routes>
         </BrowserRouter>
     )

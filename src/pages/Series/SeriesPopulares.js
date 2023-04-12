@@ -37,7 +37,7 @@ export default function SeriesPopulares() {
                             <div className="aparecendo">
                                 <img src={`https://image.tmdb.org/t/p/w300/${seriesPop.poster_path}`} alt="" />
                             </div>
-                            <div className="oculto">
+                            <div className="oculto, vira">
                                 <h2>{seriesPop.overview}</h2>
                             </div>
                         </article>

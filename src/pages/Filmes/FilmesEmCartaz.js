@@ -36,8 +36,9 @@ export default function FilmesEmCartaz() {
                     return (
                         <article>
                             <strong>{filme.title}</strong>
+                            <strong>{filme.id}</strong>
                             <img src={`https://image.tmdb.org/t/p/w300/${filme.poster_path} `} alt="" />
-                            <Link to='/Detalhes' className='details'>Detalhes</Link>
+                            <Link to={`/Detalhes/${filme.id}`} className='details'>Detalhes</Link>
 
 
 
