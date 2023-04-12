@@ -45,6 +45,7 @@ a img:hover {
 
 .oculto{
     display: none;
+        
 }
 
 .aparecendo:hover + .oculto{
@@ -54,6 +55,7 @@ a img:hover {
     color: black;
     /* border: solid red 2px; */
     height: 350px;
+    
 }
 
 .aparecendo:hover{
