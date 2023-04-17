@@ -21,7 +21,7 @@ export default function FilmesEmCartaz() {
         }
 
         loadFilmes()
-    }, [filmes])
+    }, [])
 
 
     console.log(filmes)

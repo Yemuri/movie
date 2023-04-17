@@ -1,0 +1,11 @@
+.imginfo {
+    float: left;
+    margin-left: 10px;
+    border: red solid 1px;
+}
+
+.text {
+    text-align: justify;
+    margin: 15px 0 15px 0;
+
+}
