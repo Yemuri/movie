@@ -10,6 +10,7 @@ import SeriesPopulares from './pages/Series/SeriesPopulares'
 import SeriesEstreias from './pages/Series/SeriesEstreias'
 import Contato from './pages/Contato/Contato'
 import Detalhes from './components/Detalhes/Detalhes'
+import Favoritos from './pages/Favoritos/favoritos'
 
 
 export default function Rotas() {
@@ -25,6 +26,7 @@ export default function Rotas() {
                 <Route path='/SeriesEmCartaz' element={<SeriesEmCartaz />} />
                 <Route path='/SeriesPopulares' element={<SeriesPopulares />} />
                 <Route path='/Contato' element={<Contato />} />
+                <Route path='/Favoritos' element={<Favoritos />} />
                 <Route path='/Detalhes/:id' element={<Detalhes />} />
             </Routes>
         </BrowserRouter>

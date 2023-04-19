@@ -26,6 +26,20 @@ export default function Detalhes() {
         loadDetalhes()
     }, [])
 
+    function salvarFilme() {
+        const minhaLista = localStorage.getItem('@filmesfavoritos')
+        let filmesSalvos = JSON.parse(minhaLista) || []
+        const verificarFilmes = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id)
+        if (verificarFilmes) {
+            alert('O Filme já está salvo!')
+            return
+        }
+        filmesSalvos.push(filme)
+        localStorage.setItem('@filmesfavoritos', JSON.stringify(filmesSalvos))
+        alert('FILME SALVO COM SUCESSO')
+
+    }
+
 
     return (
         <div>
@@ -35,6 +49,7 @@ export default function Detalhes() {
             <div>
                 <img src={`https://image.tmdb.org/t/p/w300/${filme.poster_path} `} alt="" className='imginfo' />
                 <h2 className='text'>{filme.overview}</h2>
+                <button onClick={salvarFilme}>Salvar Filme</button>
             </div>
         </div >
     )

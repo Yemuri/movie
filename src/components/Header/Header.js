@@ -23,6 +23,7 @@ export default function Header() {
                 </div>
             </div>
             <Link to='/Contato'>Contato</Link>
+            <Link to='/Favoritos'>Favoritos</Link>
 
 
         </div >
